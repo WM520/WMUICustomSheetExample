@@ -15,6 +15,8 @@
 		939001BD1D07A76200BF8CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939001BB1D07A76200BF8CA3 /* LaunchScreen.storyboard */; };
 		939001C81D07A76200BF8CA3 /* WMUICustomSheetExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 939001C71D07A76200BF8CA3 /* WMUICustomSheetExampleTests.m */; };
 		939001D31D07A76200BF8CA3 /* WMUICustomSheetExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 939001D21D07A76200BF8CA3 /* WMUICustomSheetExampleUITests.m */; };
+		939002721D08128700BF8CA3 /* ILTranslucentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390026F1D08128700BF8CA3 /* ILTranslucentView.m */; };
+		939002731D08128800BF8CA3 /* UICustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 939002711D08128700BF8CA3 /* UICustomActionSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		939001CE1D07A76200BF8CA3 /* WMUICustomSheetExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMUICustomSheetExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		939001D21D07A76200BF8CA3 /* WMUICustomSheetExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMUICustomSheetExampleUITests.m; sourceTree = "<group>"; };
 		939001D41D07A76200BF8CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9390026E1D08128700BF8CA3 /* ILTranslucentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTranslucentView.h; sourceTree = "<group>"; };
+		9390026F1D08128700BF8CA3 /* ILTranslucentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTranslucentView.m; sourceTree = "<group>"; };
+		939002701D08128700BF8CA3 /* UICustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomActionSheet.h; sourceTree = "<group>"; };
+		939002711D08128700BF8CA3 /* UICustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		939001AC1D07A76200BF8CA3 /* WMUICustomSheetExample */ = {
 			isa = PBXGroup;
 			children = (
+				9390026D1D08128700BF8CA3 /* WMUICustomSheet */,
 				939001B01D07A76200BF8CA3 /* AppDelegate.h */,
 				939001B11D07A76200BF8CA3 /* AppDelegate.m */,
 				939001B31D07A76200BF8CA3 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				939001D41D07A76200BF8CA3 /* Info.plist */,
 			);
 			path = WMUICustomSheetExampleUITests;
+			sourceTree = "<group>";
+		};
+		9390026D1D08128700BF8CA3 /* WMUICustomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				9390026E1D08128700BF8CA3 /* ILTranslucentView.h */,
+				9390026F1D08128700BF8CA3 /* ILTranslucentView.m */,
+				939002701D08128700BF8CA3 /* UICustomActionSheet.h */,
+				939002711D08128700BF8CA3 /* UICustomActionSheet.m */,
+			);
+			path = WMUICustomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				939001B51D07A76200BF8CA3 /* ViewController.m in Sources */,
+				939002721D08128700BF8CA3 /* ILTranslucentView.m in Sources */,
+				939002731D08128800BF8CA3 /* UICustomActionSheet.m in Sources */,
 				939001B21D07A76200BF8CA3 /* AppDelegate.m in Sources */,
 				939001AF1D07A76200BF8CA3 /* main.m in Sources */,
 			);

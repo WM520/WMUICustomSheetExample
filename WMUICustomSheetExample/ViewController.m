@@ -7,21 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "UICustomActionSheet.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+}
+- (IBAction)chick:(id)sender {
+    UICustomActionSheet* actionSheet = [[UICustomActionSheet alloc] initWithTitle:@"Menu Title" delegate:nil buttonTitles:@[@"Cancel",@"Okay"]];
+    
+    [actionSheet setButtonColors:@[[UIColor redColor]]];
+    [actionSheet setBackgroundColor:[UIColor clearColor]];
+    
+    [actionSheet setSubtitle:@"Cool subtitle message"];
+    [actionSheet setSubtitleColor:[UIColor whiteColor]];
+    
+    [actionSheet showInView:self.view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
 
 @end
